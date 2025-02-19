@@ -271,52 +271,38 @@ footer {
 }
 
 /* Responsywność */
-@media (max-width: 768px)
-{
-.top-header .logo {
-  width: 120px; /* Zmniejsza logo */
-}
-
-.top-header .container {
-  padding: 5px 10px; /* Zmniejsza odstępy */
-}
-
-.top-header nav ul {
-  gap: 10px; /* Zmniejsza odstępy w menu */
-}
-
-.top-header nav ul li a {
-  font-size: 0.9rem; /* Zmniejsza czcionkę */
-}
-  .hero-content h1 {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .top-header .logo {
+    width: 100px;
   }
-  
-  .hero-content p {
-    font-size: 1.2rem;
+
+  .top-header .container {
+    padding: 3px 8px;
   }
-  
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
+
+  .top-header nav ul {
+    gap: 5px;
   }
-  
-  .services, .pricing {
-    flex-direction: column;
-    align-items: center;
+
+  .top-header nav ul li a {
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 1.5rem;
+  .top-header .logo {
+    width: 80px;
   }
-  
-  .hero-content p {
-    font-size: 1rem;
+
+  .top-header .container {
+    padding: 2px 5px;
   }
-  
-  .service, .price-box {
-    width: 90%;
+
+  .top-header nav ul {
+    gap: 3px;
+  }
+
+  .top-header nav ul li a {
+    font-size: 0.7rem;
   }
 }
