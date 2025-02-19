@@ -272,12 +272,40 @@ footer {
 
 /* Responsywność */
 @media (max-width: 768px) {
+  .top-header {
+    height: 60px; /* Trochę niższy pasek */
+    padding: 8px 0; /* Mniejszy padding */
+  }
+
   .top-header .logo {
-    width: 100px;
+    width: 120px; /* Średniej wielkości logo */
   }
 
   .top-header .container {
-    padding: 3px 8px;
+    padding: 5px 10px; /* Odpowiednie odstępy */
+  }
+
+  .top-header nav ul {
+    gap: 8px; /* Optymalne odstępy w menu */
+  }
+
+  .top-header nav ul li a {
+    font-size: 0.85rem; /* Delikatnie mniejsza czcionka */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-header {
+    height: 55px; /* Jeszcze trochę niższy na małych ekranach */
+    padding: 6px 0;
+  }
+
+  .top-header .logo {
+    width: 100px; /* Mniejsze logo, ale nadal widoczne */
+  }
+
+  .top-header .container {
+    padding: 4px 8px;
   }
 
   .top-header nav ul {
@@ -286,23 +314,5 @@ footer {
 
   .top-header nav ul li a {
     font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .top-header .logo {
-    width: 80px;
-  }
-
-  .top-header .container {
-    padding: 2px 5px;
-  }
-
-  .top-header nav ul {
-    gap: 3px;
-  }
-
-  .top-header nav ul li a {
-    font-size: 0.7rem;
   }
 }
