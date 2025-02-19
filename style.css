@@ -271,7 +271,23 @@ footer {
 }
 
 /* Responsywność */
-@media (max-width: 768px) {
+@media (max-width: 768px)
+{
+.top-header .logo {
+  width: 120px; /* Zmniejsza logo */
+}
+
+.top-header .container {
+  padding: 5px 10px; /* Zmniejsza odstępy */
+}
+
+.top-header nav ul {
+  gap: 10px; /* Zmniejsza odstępy w menu */
+}
+
+.top-header nav ul li a {
+  font-size: 0.9rem; /* Zmniejsza czcionkę */
+}
   .hero-content h1 {
     font-size: 2rem;
   }
