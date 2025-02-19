@@ -21,7 +21,8 @@ body {
 .top-header {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
+  position: fixed;
+  padding-top: 0;
   top: 0;
   width: 100%;
   z-index: 100;
